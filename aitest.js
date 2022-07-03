@@ -12,12 +12,14 @@ results.innerHTML = imageURL;
 button.addEventListener("click", function () {
     ImageAPI.analyseFaces(imageURL, function (data) {
         console.log(data);
-        for (let i = 0; i < data.length; i++) {
-            faces.push({
-                "blur": data[i].faceAttributes.blur,
-                "exposure": data[i].faceAttributes.exposure,
-                "noise": data[i].faceAttributes.noise,
-            });
+        if (faces = []) {
+            for (let i = 0; i < data.length; i++) {
+                faces.push({
+                    "blur": data[i].faceAttributes.blur,
+                    "exposure": data[i].faceAttributes.exposure,
+                    "noise": data[i].faceAttributes.noise,
+                });
+            };
         };
         console.log(faces);
         let blur = document.getElementById("r1");
