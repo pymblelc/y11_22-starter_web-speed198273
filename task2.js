@@ -1,8 +1,8 @@
 var imageCapture;
 
-navigator.mediaDevices.getUserMedia({ video: true })  // get a video track from the user's camera
+navigator.mediaDevices.getUserMedia({ video: true })  // get a media input with video from the user, producing a MediaStream
   .then(mediaStream => {
-    const track = mediaStream.getVideoTracks()[0];  // assign the video track to the constant 'track'
+    const track = mediaStream.getVideoTracks()[0];  // assign the video track from MediaStream to the constant 'track'
     imageCapture = new ImageCapture(track);  // create an object that can capture still images from track
   })
   .catch(error => console.log(error));
