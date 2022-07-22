@@ -1,0 +1,65 @@
+.outside {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    max-width: 10cm;
+}
+
+.btnContainer {
+    width: 5cm;
+}
+
+button {
+    width: 100%;
+}
+
+.btnContainer>p {
+    width: 100%;
+    text-align: center;
+}
+
+.imgContainer {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.statistics {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    max-width: 10cm;
+    background-color: lightgray;
+}
+
+.attributes {
+    width: 50%;
+}
+
+.attributes>p {
+    width: 100%;
+    text-align: right;
+}
+
+.data {
+    width: 50%;
+}
+
+.data>p {
+    width: 100%;
+    text-align: left;
+}
